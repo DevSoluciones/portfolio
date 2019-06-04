@@ -138,17 +138,43 @@
             </div>
               
             <div class="cell small-12 medium-6">
-              <form method="post" id="email_form">
-                  <label>Nombre</label>
-                  <input type="text" id="from_name" name="from_name" placeholder="Ingrese su nombre">
-                  <label>Email</label>
-                  <input type="email" name="email" id="email" placeholder="Ingrese su email">
-                  <label>Teléfono</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Ingrese su número de teléfono">
-                  <label>Mensaje</label>
-                  <textarea name="message_html" id="message_html" placeholder="Ingrese el mensaje" rows="5"></textarea>
+              <form method="post" id="email_form" data-abide novalidate onsubmit="return false;">
+                  <div data-abide-error class="alert callout" style="display: none;">
+                      <p><i class="fi-alert"></i> Tienes algunos errores en el formulario.</p>
+                  </div>
+                  <label>
+                    Nombre
+                    <input type="text" id="from_name" name="from_name" aria-errormessage="nombreError" placeholder="Ingrese su nombre" required>
+                    <span class="form-error" id="nombreError">
+                        Tu nombre es requerido.
+                    </span>
+                  </label>
+                  <label>
+                    Email
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="fi-mail"></i></span>
+                      <input class="input-group-field" type="email" name="email" id="email" required aria-errormessage="emailError" placeholder="Ingrese su email" >
+                    </div>
+                    <span class="form-error" id="emailError">
+                      Debe ser de tipo email, Y es requerido.
+                    </span>
+                  </label>
+                  <label>
+                    Teléfono
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="fi-telephone"></i></span>
+                      <input class="input-group-field" type="tel" name="phone" id="phone" placeholder="Ingrese su número de teléfono">
+                    </div>
+                  </label>
+                  <label>
+                    Mensaje
+                    <textarea name="message_html" id="message_html" placeholder="Ingrese el mensaje" rows="5" required></textarea>
+                    <span class="form-error">
+                      Este campo es requerido.
+                    </span>
+                  </label>
                   <div class="g-recaptcha margin-bottom-1" data-sitekey="6LcdG6cUAAAAAPW87OR8hEr6SZZK4-Bx6QaYepEG"></div>
-                  <a href="#" id="send" class="send-message button success expanded hollow">Enviar</a>
+                  <button type="submit" class="send-message button success expanded hollow">Enviar</button>
               </form>
             </div>
 
@@ -168,7 +194,8 @@
         <!-- fin del grid general de contenido-->
       </div>
     </div> 
-    <!-- fin off canvas-content -->     
+    <!-- fin off canvas-content -->    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> 
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
     <script src="assets/js/vendor/jquery.js"></script>
