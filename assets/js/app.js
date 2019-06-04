@@ -4,7 +4,6 @@ $(document).foundation();
 })();
 $("#email_form").on('formvalid.zf.abide', function(e) {
   e.preventDefault();
-  console.log("valid trigger");
   emailjs.sendForm('yahoo', 'template_contacto', '#email_form')
   .then(function(response) {
      console.log('SUCCESS!', response.status, response.text);
