@@ -20,8 +20,8 @@ body{
 .margin-top-9{
   margin-top: 17rem;
 }
-.button.hollow:focus, .button.hollow:hover{
-  border-color: #cacaca !important;
+.send-message.button.hollow.success:focus, .button.hollow.success:hover{
+  border-color: white !important;
   color: white !important;
 }
 h1, h4, h5, p.text-left, .label.secondary, .button{
