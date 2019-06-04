@@ -108,9 +108,6 @@ label{
   }
 }
 @media screen and (max-width: 411px){
-  .button.hollow.primary {
-    font-size: 40px;
-  }
   h5 > a {
     font-size: 36px;
   }
