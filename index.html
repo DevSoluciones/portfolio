@@ -4,103 +4,172 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/foundation.min.css"></link>
+  <link rel="stylesheet" href="assets/css/foundation-icons.css"></link>
   <link rel="stylesheet" href="assets/css/app.css"></link>
   <title>Portfolio</title>
 </head>
 <body>
-  <div class="grid-container">
-
-    <div class="grid-x grid-padding-x">
-      <div class="cell medium-4">
-          <img src="assets/img/image_proy.png" alt="foto">
-          <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint perferendis et eaque eligendi maxime voluptates est exercitationem libero, repudiandae distinctio nam labore officiis cupiditate laudantium provident, dolorem veritatis hic odio?</h5>
+    <!-- inicio del off-canvas -->
+    <div class="off-canvas position-left reveal-for-large height-off-canvas" id="description" data-off-canvas>
+      <div class="grid-x grid-padding-x">
+        <div class="cell small-12">
+          <img src="assets/img/avatar.png" alt="foto">
+          <p class="text-left">Freelancer, Desarrollador Web, Diseñador de páginas Web, Running, Foodie.</p>
+        </div>
       </div>
-      <div class="cell medium-8">
-          <h1 class="text-center">Titulo principal del portafolios</h1>
-          <h4 class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet magni labore cumque excepturi beatae assumenda ex et quam ducimus. Velit debitis, beatae aspernatur sint quas quo et soluta necessitatibus atque!</h4>
+    </div>
+    <!-- fin del off-canvas-->
+
+    <!-- inicio del contenido off-canvas-content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="title-bar hide-for-large">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-open="description"></button>
+          <span class="title-bar-title">Darwel Quintero</span>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <!-- grid general de contenido-->
+        <div class="cell small-12 medium-12 padding-1">
+          <h1 class="text-right title-shadow">Portfolio</h1>
+          <h4 class="text-left">Yo soy Darwel Web Developer creativo, tengo 10 años de experiencia en el campo en el cual he aprendido mucho sobre nuevas tendencias y principios que me llevan a ofrecer un excelente servicio en el mundo de las TICs, he aqui algunos de mis trabajos...</h4>
+          <!-- grid de páginas-->
           <div class="grid-x grid-padding-x">
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
-            </div>
-            <div class="cell medium-4 small-12">
-                <img src="assets/img/image_proy.png">
-                <h5>Título</h5>
+            <div class="cell small-12 medium-3">
+              <div class="card">
+                <div class="card-divider">
+                  <span class="fi-circle">
+                    <i class="fi-web fi-1x"></i>
+                  </span>
+                </div>
+                <img src="assets/img/page_one_small.png">
+                <div class="full reveal" id="page-one" data-reveal>
+                  <img src="assets/img/page_one.png" alt="Landing page Platzipalooza">
+                  <button class="close-button button-close-reveal" data-close aria-label="Close" type="button">
+                    <span aria-hidden="true" class="times">&times;</span>
+                  </button>
+                </div>
+                <div class="card-section">
+                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzipalooza/" target="_blanck"><i class="fi-link padding-right-1"></i>Platzipalooza</a></h5> 
+                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzipalooza/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <span class="label secondary font-bold margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Landing page</span>
+                  <button class="hollow primary button btn large" data-toggle="page-one"><i class="fi-zoom-in padding-1x"></i>Ver</button>
+                </div>
               </div>
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
+            </div>
+            <div class="cell small-12 medium-3">
+              <div class="card">
+                  <div class="card-divider">
+                    <span class="fi-circle">
+                      <i class="fi-web fi-1x"></i>
+                    </span>
+                  </div>
+                  <img src="assets/img/page_two.png">
+                  <div class="full reveal" id="page-two" data-reveal>
+                    <img src="assets/img/page_two.png" alt="Blog invie">
+                    <button class="close-button button-close-reveal" data-close aria-label="Close" type="button">
+                      <span aria-hidden="true" class="times">&times;</span>
+                    </button>
+                  </div>
+                  <div class="card-section">
+                    <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/invie/" target="_blanck"><i class="fi-link padding-right-1"></i>Invie</a></h5>
+                    <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/invie/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                    <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Blog personal</span>
+                    <button class="hollow primary button large btn" data-toggle="page-two"><i class="fi-zoom-in padding-1x"></i>Ver</button>
+                  </div>
+                </div>
+            </div>
+            <div class="cell small-12 medium-3">
+              <div class="card">
+                <div class="card-divider">
+                  <span class="fi-circle">
+                    <i class="fi-web fi-1x"></i>
+                  </span>
+                </div>
+                <img src="assets/img/page_three_small.png">
+                <div class="full reveal" id="page-three" data-reveal>
+                  <img src="assets/img/page_three.png" alt="Tienda online">
+                  <button class="close-button button-close-reveal" data-close aria-label="Close" type="button">
+                    <span aria-hidden="true" class="times">&times;</span>
+                  </button>
+                </div>
+                <div class="card-section">
+                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzishop/" target="_blanck"><i class="fi-link padding-right-1"></i>Platzishop</a></h5>
+                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzishop/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Tienda online</span>
+                  <button class="hollow primary button btn large" data-toggle="page-three"><i class="fi-zoom-in padding-1x"></i>Ver</button>
+                </div>
+              </div>
+            </div>
+            <div class="cell small-12 medium-3">
+              <div class="card">
+                <div class="card-divider">
+                  <span class="fi-circle">
+                    <i class="fi-laptop fi-1x"></i>
+                  </span>
+                </div>
+                <img src="assets/img/app_one_small.png">
+                <div class="full reveal" id="app-one" data-reveal>
+                  <img src="assets/img/app_one.png" alt="Aplicacion PlatziSquare">
+                  <button class="close-button button-close-reveal" data-close aria-label="Close" type="button">
+                    <span aria-hidden="true" class="times">&times;</span>
+                  </button>
+                </div>
+                <div class="card-section">
+                  <h5 class="hide-for-medium-only"><a href="https://platzisquare-1513296720077.web.app" target="_blanck"><i class="fi-link padding-right-1"></i>PlatziSquare</a></h5>
+                  <a class="show-for-medium hide-for-large" href="https://platzisquare-1513296720077.web.app" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Sigle page</span>
+                  <button class="hollow primary button btn large" data-toggle="app-one"><i class="fi-zoom-in padding-1x"></i>Ver</button>
+                </div>
+              </div>
             </div>
           </div>
-  
-          <div class="grid-x grid-padding-x">
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
-            </div>
-    
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
-            </div>
-    
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
-            </div>
-          </div>
-  
-          <div class="grid-x grid-padding-x">
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png" alt="">
-              <h5>Título</h5>
-            </div>
-    
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png" alt="">
-              <h5>Título</h5>
-            </div>
-    
-            <div class="cell medium-4 small-12">
-              <img src="assets/img/image_proy.png">
-              <h5>Título</h5>
-            </div>
-          </div>
-          <hr>
-  
+          <!-- fin de grid de páginas-->
+          <hr class="my-hr">
+          <!-- contactame -->
           <div class="grid-x grid-padding-x">
             <div class="cell small-12 medium-6">
-              <h3>Título</h3>
+              <h3>Contactenos</h3>
               <p class="lead text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi illum possimus obcaecati quae nobis sed distinctio? Amet, pariatur. Doloribus voluptates quibusdam, neque perferendis molestias sed impedit debitis incidunt natus numquam.</p>
-              <section>
-                  <div class="grid-x grid-padding-x text-left">
-                    <div class="cell small-1"><a href="#" target="_blanck"><i class="fi-social-facebook"></i></a></div>
-                    <div class="cell small-1"><a href="#" target="_blanck"><i class="fi-social-instagram"></i></a></div>
-                    <div class="cell small-1"><a href="#" target="_blanck"><i class="fi-social-twitter"></i></a></div>
-                  </div>
+              <section class="margin-top-9 text-left">
+                <ul class="menu">
+                  <li><a href="https://www.facebook.com/darwel.quintero" target="_blanck"><i class="fi-social-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/darwelX/" target="_blanck"><i class="fi-social-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/darwelX" target="_blanck"><i class="fi-social-twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/darwel-duran/" target="_blanck"><i class="fi-social-linkedin"></i></a></li>
+                </ul>
               </section>
             </div>
-  
+              
             <div class="cell small-12 medium-6">
-                <form>
-                    <label>Etiqueta 1</label>
-                    <input type="text" placeholder="Rellene el campo">
-                    <label>Etiqueta 2</label>
-                    <input type="text" placeholder="Rellene el campo">
-                    <label>Etiqueta 3</label>
-                    <input type="text" placeholder="Rellene el campo">
-                  <a href="#" class="button success large">Enviar</a>
+              <form method="post" id="email_form">
+                  <label>Nombre</label>
+                  <input type="text" id="from_name" name="from_name" placeholder="Ingrese su nombre">
+                  <label>Email</label>
+                  <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                  <label>Teléfono</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Ingrese su número de teléfono">
+                  <label>Mensaje</label>
+                  <textarea name="message_html" id="message_html" placeholder="Ingrese el mensaje" rows="5"></textarea>
+                  <a href="#" id="send" class="button success expanded hollow">Enviar</a>
+                  <div class="g-recaptcha" data-sitekey="6LcdG6cUAAAAAPW87OR8hEr6SZZK4-Bx6QaYepEG"></div>
                 </form>
-              </div>
+            </div>
           </div>
+          <!-- fin de contactame-->
+        </div>
+        <!-- fin del grid general de contenido-->
       </div>
-  
-    </div>
-  
-  </div>
-  <script src="assets/js/vendor/jquery.js"></script>
-  <script src="assets/js/vendor/what-input.js"></script>
-  <script src="assets/js/vendor/foundation.min.js"></script>
+    </div> 
+    <!-- fin off canvas-content -->     
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
