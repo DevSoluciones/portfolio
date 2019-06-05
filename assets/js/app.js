@@ -13,6 +13,10 @@ $("#email_form").on('formvalid.zf.abide', function(e) {
       timer: 3000,
       type:'success'
      });
+     document.getElementById("from_name").value="";
+     document.getElementById("email").value="";
+     docuemnt.getElementById("phone").value="";
+     docuemnt.getElementById("message_html").value="";
   }, function(error) {
      console.log('FAILED...', error);
      Swal.fire({
