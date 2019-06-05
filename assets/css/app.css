@@ -37,6 +37,7 @@ h1, h4, h5, p.text-left, .label.secondary, .button{
   background-image: url('../img/fondo_portafolios.png');
   background-repeat: no-repeat;
   background-color: darkslategrey;
+  background-size: 100% 55%;
 }
 .label.secondary{
   color: #2ba6cb;
