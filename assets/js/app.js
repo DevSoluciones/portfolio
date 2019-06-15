@@ -1,6 +1,5 @@
 const $ = require('jquery');
 $(document).foundation();
-console.log('hola');
 (function(){
   emailjs.init("user_sa0pTGfc3hpt7Sp6Iv7nw");
 })();
