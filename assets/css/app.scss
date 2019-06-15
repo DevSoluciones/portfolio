@@ -1,57 +1,57 @@
+$color-background: darkslategrey;
 body{
   font-family: 'Lato', sans-serif;
   color:white;
 }
-.margin-top-4{
+.margin-top-4 {
   margin-top: 4rem;
 }
-.margin-top-5{
+.margin-top-5 {
   margin-top: 5rem;
 }
-.margin-top-6{
+.margin-top-6 {
   margin-top: 6rem;
 }
-.margin-top-7{
+.margin-top-7 {
   margin-top: 7rem;
 }
-.margin-top-8{
+.margin-top-8 {
   margin-top: 8rem;
 }
-.margin-top-9{
+.margin-top-9 {
   margin-top: 17rem;
 }
-.send-message.button.hollow.success:focus, .button.hollow.success:hover{
+.send-message.button.hollow.success:focus, .button.hollow.success:hover {
   border-color: white !important;
   color: white !important;
 }
-h1, h4, h5, p.text-left, .label.secondary, .button{
+h1, h4, h5, p.text-left, .label.secondary, .button {
   font-family: 'Ubuntu', sans-serif;
 }
-.title-shadow{
-  text-shadow:  2px 2px 3px darkslategrey;
+.title-shadow {
+  text-shadow:  2px 2px 3px $color-background;
 }
-.off-canvas{
+.off-canvas {
   background-color: rgba(47, 79, 79, 0.8);
 }
-.off-canvas-content{
+.background-canvas-content {
   background-image: url('../img/fondo_portafolios.png');
   background-repeat: no-repeat;
-  background-color: darkslategrey;
-  background-size: 100% 55%;
+  background-color: $color-background;
 }
-.label.secondary{
+.label.secondary {
   color: #2ba6cb;
 }
-.button-close-reveal{
+.button-close-reveal {
   background-color: gray; 
   width: 40px; 
   height: 40px;
   border-radius: 40px;
 }
-.times{
+.times {
   color: white;
 }
-label{
+label {
   color: white;
   font-size: 1em;
   font-family: 'Lato', sans-serif;
@@ -60,7 +60,7 @@ label{
   background:white;
   font-family: 'Lato', sans-serif;
 }
-.fi-circle{
+.fi-circle {
   background: linear-gradient(to left, #fe344e, #ff7250);
   border-radius: 40px;
   height: 40px;
@@ -75,11 +75,11 @@ label{
 .fi-2x {
   font-size: 16px;
 }
-.padding-1x{
+.padding-1x {
   padding-right: 8px;
 }
 /*background: linear-gradient(to left, #fe344e, #ff7250);*/
-.card-divider > .fi-circle > .fi-web, .fi-laptop{
+.card-divider > .fi-circle > .fi-web, .fi-laptop {
   background: transparent;
   color:white;
 }
@@ -93,22 +93,22 @@ label{
   max-width: 100%;
   border-bottom: 1px solid #cacaca;
 }
-.btn{
+.btn {
   transition: 0.3s;
   display: block;
   margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
 }
- .btn:hover{
+ .btn:hover {
   transform: scale(1.2);
   letter-spacing: 3px;
  }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .margin-top-9{
     margin-top: 2rem;
   }
 }
-@media screen and (max-width: 411px){
+@media screen and (max-width: 411px) {
   h5 > a {
     font-size: 36px;
   }
@@ -119,7 +119,7 @@ label{
    .label.secondary {
      font-size: 24px;
    }
-   .margin-top-9{
+   .margin-top-9 {
     margin-top: 2rem;
   }
 }

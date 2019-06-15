@@ -1,4 +1,6 @@
+const $ = require('jquery');
 $(document).foundation();
+console.log('hola');
 (function(){
   emailjs.init("user_sa0pTGfc3hpt7Sp6Iv7nw");
 })();
@@ -15,8 +17,8 @@ $("#email_form").on('formvalid.zf.abide', function(e) {
      });
      document.getElementById("from_name").value="";
      document.getElementById("email").value="";
-     docuemnt.getElementById("phone").value="";
-     docuemnt.getElementById("message_html").value="";
+     document.getElementById("phone").value="";
+     document.getElementById("message_html").value="";
   }, function(error) {
      console.log('FAILED...', error);
      Swal.fire({
