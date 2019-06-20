@@ -61,11 +61,11 @@ module.exports = {
     })
   ],
   devServer: {
-    host: "devsoluciones.github.io",
-    port: 8080,
+    host: "dev.devsoluciones.github.io",
+    port: 8000,
     https: {
-      key: fs.readFileSync('key.key'),
-      cert: fs.readFileSync('cert.crt')
+      key: fs.readFileSync('privateKey.key'),
+      cert: fs.readFileSync('certificate.crt')
     }
   }
 };
