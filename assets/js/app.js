@@ -13,11 +13,16 @@ $("#email_form").on('formvalid.zf.abide', function(e) {
       message:'Haga clic en el boton OK para continuar',
       timer: 3000,
       type:'success'
+     }).then((value)=>{
+       console.log('hola');
+       document.getElementById("from_name").value="";
+       document.getElementById("email").value="";
+       document.getElementById("phone").value="";
+       document.getElementById("message_html").value="";
+       setTimeout( ()=>{
+         document.location="gracias.html";
+       },3100);
      });
-     document.getElementById("from_name").value="";
-     document.getElementById("email").value="";
-     document.getElementById("phone").value="";
-     document.getElementById("message_html").value="";
   }, function(error) {
      console.log('FAILED...', error);
      Swal.fire({

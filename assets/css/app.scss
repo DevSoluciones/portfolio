@@ -75,6 +75,24 @@ label {
 .fi-2x {
   font-size: 16px;
 }
+.badge-large{
+  background: #fff;
+  color: blue;
+  border: .5px solid;
+  border-radius: 120px;
+  height: 120px;
+  width: 120px;
+  border-color: black;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+.fi-3x{
+  font-size: 68px;
+  display: flex;
+  margin: 0 auto;
+}
 .padding-1x {
   padding-right: 8px;
 }
