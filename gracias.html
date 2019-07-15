@@ -26,6 +26,32 @@
   <title>Portfolio</title>
 </head>
 <body>
-  <span class="badge-large"><i class="fi-check fi-3x"></i></span>
+  <div class="grid-container fluid">
+    <div class="grid-x">
+      <div class="cell small-12 medium-4 medium-offset-4 margin-top-3 text-center box-thanks">
+        <h1 class="margin-top-3 text-tankns">Te damos las mas sinceras gracias</h1>
+        <button class="hollow button btn-thanks btn-rounded-expanded secondary large btn-expanded padding-2" id="btn-thanks">REGRESAR</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Montserrat','Oswald' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    // ]]>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> 
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>

@@ -1,4 +1,11 @@
 const $ = require('jquery');
+function backHome(){
+  document.location="/portfolio";
+}
+$('#btn-thanks').on('click', (event)=>{
+  event.preventDefault();
+  backHome();
+});
 $(document).foundation();
 (function(){
   emailjs.init("user_sa0pTGfc3hpt7Sp6Iv7nw");
