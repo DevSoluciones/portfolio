@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-141494416-1', 'auto');
+    ga('send', 'pageview');
+  </script>
   <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="Páginas,SPA,Freelancer,Resposive,Maquetar">
+  <meta name="author" content="Darwel Quintero">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/foundation.min.css"></link>
   <link rel="stylesheet" href="assets/css/foundation-icons.css"></link>
-  <link rel="stylesheet" href="assets/css/app.css"></link>
+  <link rel="stylesheet" href="dist/app.css"></link>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
   <title>Portfolio</title>
 </head>
 <body>
@@ -33,13 +47,12 @@
       </div>
       <div class="grid-x grid-padding-x">
         <!-- grid general de contenido-->
-        <div class="cell small-12 medium-12 padding-1">
-          <h1 class="text-right title-shadow">Portfolio</h1>
+        <div class="cell small-12 medium-12 padding-1 background-canvas-content">
           <h4 class="text-left">Yo soy Darwel Web Developer creativo, tengo 10 años de experiencia en el campo en el cual he aprendido mucho sobre nuevas tendencias y principios que me llevan a ofrecer un excelente servicio en el mundo de las TICs, he aqui algunos de mis trabajos...</h4>
           <!-- grid de páginas-->
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium" id="test-eq">
             <div class="cell small-12 medium-3">
-              <div class="card">
+              <div class="card callout" data-equalizer-watch>
                 <div class="card-divider">
                   <span class="fi-circle">
                     <i class="fi-web fi-1x"></i>
@@ -53,15 +66,15 @@
                   </button>
                 </div>
                 <div class="card-section">
-                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzipalooza/" target="_blanck"><i class="fi-link padding-right-1"></i>Platzipalooza</a></h5> 
-                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzipalooza/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzipalooza/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Platzipalooza</a></h5> 
+                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzipalooza/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Enlace</a>
                   <span class="label secondary font-bold margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Landing page</span>
                   <button class="hollow primary button btn large" data-toggle="page-one"><i class="fi-zoom-in padding-1x"></i>Ver</button>
                 </div>
               </div>
             </div>
             <div class="cell small-12 medium-3">
-              <div class="card">
+              <div class="card callout" data-equalizer-watch>
                   <div class="card-divider">
                     <span class="fi-circle">
                       <i class="fi-web fi-1x"></i>
@@ -75,15 +88,15 @@
                     </button>
                   </div>
                   <div class="card-section">
-                    <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/invie/" target="_blanck"><i class="fi-link padding-right-1"></i>Invie</a></h5>
-                    <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/invie/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                    <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/invie/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Invie</a></h5>
+                    <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/invie/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Enlace</a>
                     <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Blog personal</span>
                     <button class="hollow primary button large btn" data-toggle="page-two"><i class="fi-zoom-in padding-1x"></i>Ver</button>
                   </div>
                 </div>
             </div>
             <div class="cell small-12 medium-3">
-              <div class="card">
+              <div class="card callout" data-equalizer-watch>
                 <div class="card-divider">
                   <span class="fi-circle">
                     <i class="fi-web fi-1x"></i>
@@ -97,15 +110,15 @@
                   </button>
                 </div>
                 <div class="card-section">
-                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzishop/" target="_blanck"><i class="fi-link padding-right-1"></i>Platzishop</a></h5>
-                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzishop/" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <h5 class="hide-for-medium-only"><a href="https://devsoluciones.github.io/platzishop/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Platzishop</a></h5>
+                  <a class="show-for-medium hide-for-large" href="https://devsoluciones.github.io/platzishop/" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Enlace</a>
                   <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Tienda online</span>
                   <button class="hollow primary button btn large" data-toggle="page-three"><i class="fi-zoom-in padding-1x"></i>Ver</button>
                 </div>
               </div>
             </div>
             <div class="cell small-12 medium-3">
-              <div class="card">
+              <div class="card callout" data-equalizer-watch>
                 <div class="card-divider">
                   <span class="fi-circle">
                     <i class="fi-laptop fi-1x"></i>
@@ -119,8 +132,8 @@
                   </button>
                 </div>
                 <div class="card-section">
-                  <h5 class="hide-for-medium-only"><a href="https://platzisquare-1513296720077.web.app" target="_blanck"><i class="fi-link padding-right-1"></i>PlatziSquare</a></h5>
-                  <a class="show-for-medium hide-for-large" href="https://platzisquare-1513296720077.web.app" target="_blanck"><i class="fi-link padding-right-1"></i>Enlace</a>
+                  <h5 class="hide-for-medium-only"><a href="https://platzisquare-1513296720077.web.app" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>PlatziSquare</a></h5>
+                  <a class="show-for-medium hide-for-large" href="https://platzisquare-1513296720077.web.app" target="_blanck" rel="follow"><i class="fi-link padding-right-1"></i>Enlace</a>
                   <span class="label secondary margin-bottom-1 font-bold"><i class="fi-price-tag margin-right-1 fi-2x"></i>Sigle page</span>
                   <button class="hollow primary button btn large" data-toggle="app-one"><i class="fi-zoom-in padding-1x"></i>Ver</button>
                 </div>
@@ -133,30 +146,62 @@
           <div class="grid-x grid-padding-x">
             <div class="cell small-12 medium-6">
               <h3>Contactenos</h3>
-              <p class="lead text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi illum possimus obcaecati quae nobis sed distinctio? Amet, pariatur. Doloribus voluptates quibusdam, neque perferendis molestias sed impedit debitis incidunt natus numquam.</p>
-              <section class="margin-top-9 text-left">
-                <ul class="menu">
-                  <li><a href="https://www.facebook.com/darwel.quintero" target="_blanck"><i class="fi-social-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/darwelX/" target="_blanck"><i class="fi-social-instagram"></i></a></li>
-                  <li><a href="https://twitter.com/darwelX" target="_blanck"><i class="fi-social-twitter"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/darwel-duran/" target="_blanck"><i class="fi-social-linkedin"></i></a></li>
-                </ul>
-              </section>
+              <p class="lead text-justify">Para más información acerca de nuestros servicios puedes ponerte en contacto y hacernos saber tus necesidades para tu idea o negocio Web, estaremos muy atento a tus inquietudes y seran respondidas lo más pronto posible. Gracias por su confianza.</p>
             </div>
               
             <div class="cell small-12 medium-6">
-              <form method="post" id="email_form">
-                  <label>Nombre</label>
-                  <input type="text" id="from_name" name="from_name" placeholder="Ingrese su nombre">
-                  <label>Email</label>
-                  <input type="email" name="email" id="email" placeholder="Ingrese su email">
-                  <label>Teléfono</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Ingrese su número de teléfono">
-                  <label>Mensaje</label>
-                  <textarea name="message_html" id="message_html" placeholder="Ingrese el mensaje" rows="3"></textarea>
+              <form method="post" id="email_form" data-abide novalidate onsubmit="return false;">
+                  <div data-abide-error class="alert callout" style="display: none;">
+                      <p><i class="fi-alert"></i> Tienes algunos errores en el formulario.</p>
+                  </div>
+                  <label>
+                    Nombre
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="fi-torso"></i></span>
+                      <input class="input-group-field" type="text" id="from_name" name="from_name" aria-errormessage="from_nameError" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <span class="form-error" id="from_nameError">
+                        Tu nombre es requerido.
+                    </span>
+                  </label>
+                  <label>
+                    Email
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="fi-mail"></i></span>
+                      <input class="input-group-field" type="email" name="email" id="email" required aria-errormessage="emailError" placeholder="Ingrese su email" >
+                    </div>
+                    <span class="form-error" id="emailError">
+                      Debe ser de tipo email, Y es requerido.
+                    </span>
+                  </label>
+                  <label>
+                    Teléfono
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="fi-telephone"></i></span>
+                      <input class="input-group-field" type="tel" name="phone" id="phone" placeholder="Ingrese su número de teléfono">
+                    </div>
+                  </label>
+                  <label>
+                    Mensaje
+                    <textarea name="message_html" id="message_html" placeholder="Ingrese el mensaje" rows="5" required></textarea>
+                    <span class="form-error" id="message_htmlError">
+                      Este campo es requerido.
+                    </span>
+                  </label>
                   <div class="g-recaptcha margin-bottom-1" data-sitekey="6LcdG6cUAAAAAPW87OR8hEr6SZZK4-Bx6QaYepEG"></div>
-                  <a href="#" id="send" class="button success expanded hollow">Enviar</a>
-                </form>
+                  <button type="submit" class="send-message button success expanded hollow">Enviar</button>
+              </form>
+            </div>
+
+            <div class="cell small-10 small-offset-2 medium-4 medium-offset-4">
+              <section>
+                <ul class="menu">
+                  <li><a href="https://www.facebook.com/darwel.quintero" target="_blanck" rel="nofollow"><i class="fi-social-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/darwelX/" target="_blanck" rel="nofollow"><i class="fi-social-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/darwelX" target="_blanck" rel="nofollow"><i class="fi-social-twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/darwel-duran/" target="_blanck" rel="nofollow"><i class="fi-social-linkedin"></i></a></li>
+                </ul>
+              </section>
             </div>
           </div>
           <!-- fin de contactame-->
@@ -164,12 +209,11 @@
         <!-- fin del grid general de contenido-->
       </div>
     </div> 
-    <!-- fin off canvas-content -->     
+    <!-- fin off canvas-content -->    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> 
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/what-input.js"></script>
-    <script src="assets/js/vendor/foundation.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="dist/bundle.js"></script>
+    
 </body>
 </html>
